@@ -11,7 +11,7 @@
     <StackPanel>
         <controls:AdaptiveGridView Background="Green">
             <controls:AdaptiveGridView.Header>
-                <controls:ScrollHeader Mode="Sticky" Margin="0,0,0,8">
+                <controls:ScrollHeader  Margin="0,0,0,8">
                     <StackPanel>
                         <AutoSuggestBox Width="220" QueryIcon="Find" PlaceholderText="I am n autoSuggestBox"/>
                         <TextBlock TextWrapping="WrapWholeWords" FontSize="28"
@@ -23,7 +23,7 @@
         </controls:AdaptiveGridView>
         <controls:AdaptiveGridView Margin="0,20,0,0" Background="Gray">
             <controls:AdaptiveGridView.Header>
-                <controls:ScrollHeader Mode="Sticky" Margin="0,0,0,8">
+                <controls:ScrollHeader Margin="0,0,0,8">
                     <StackPanel>
                         <TextBox Width="220" PlaceholderText="I am a textbox"/>
                         <TextBlock TextWrapping="WrapWholeWords" FontSize="28"
