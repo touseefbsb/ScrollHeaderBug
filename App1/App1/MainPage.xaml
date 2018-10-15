@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="App1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel>
+        <controls:AdaptiveGridView Background="Green">
+            <controls:AdaptiveGridView.Header>
+                <controls:ScrollHeader Mode="Sticky" Margin="0,0,0,8">
+                    <StackPanel>
+                        <AutoSuggestBox Width="220" QueryIcon="Find" PlaceholderText="I am n autoSuggestBox"/>
+                        <TextBlock TextWrapping="WrapWholeWords" FontSize="28"
+                               Text="The AutoSuggestbox above me will get focused even if you click on me "/>
+                        
+                    </StackPanel>
+                </controls:ScrollHeader>
+            </controls:AdaptiveGridView.Header>
+        </controls:AdaptiveGridView>
+        <controls:AdaptiveGridView Margin="0,20,0,0" Background="Gray">
+            <controls:AdaptiveGridView.Header>
+                <controls:ScrollHeader Mode="Sticky" Margin="0,0,0,8">
+                    <StackPanel>
+                        <TextBox Width="220" PlaceholderText="I am a textbox"/>
+                        <TextBlock TextWrapping="WrapWholeWords" FontSize="28"
+                                      Text="The TextBox above me will get focused even if you click on me "/>
+
+                   </StackPanel>
+                </controls:ScrollHeader>
+            </controls:AdaptiveGridView.Header>
+        </controls:AdaptiveGridView>
+    </StackPanel>
+</Page>
